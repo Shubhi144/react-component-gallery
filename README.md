@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# React Component Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Screenshot of your project here]
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+An interactive gallery showcasing React fundamentals including state management, event handling, conditional rendering, and list rendering.
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[Your deployed URL]
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🎨 6 interactive demo components
+- 🔍 Real-time search functionality
+- 🏷️ Category filtering
+- 📱 Responsive design
+- ⚡ Built with TypeScript
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+## Demo Components
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. **Counter** - State management with increment/decrement
+2. **Contact Form** - Form handling and validation
+3. **Profile Card** - Conditional rendering with expandable content
+4. **Todo List** - List rendering with add/remove functionality
+5. **Toggle Switch** - Boolean state management
+6. **Color Picker** - Event handling with multiple options
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+## Technologies
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- React 19
+- TypeScript
+- Vite
+- CSS3
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+## Installation
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+\```bash
+git clone [your-repo-url]
+cd react-component-gallery
+npm install
+npm run dev
+\```
+
+## What I Learned
+
+- Managing state with useState hook
+- Handling events in React
+- Implementing search and filter functionality
+- List rendering and keys
+- Conditional rendering patterns
+- TypeScript with React components
+- Responsive design principles
+
+## Screenshots
+
+[Add 2-3 screenshots showing different features]
+
+## Acknowledgments
+
+Built as part of Week 2 final project for [Course Name]
