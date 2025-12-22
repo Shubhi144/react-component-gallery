@@ -1,8 +1,15 @@
+import { useState } from "react";
 import Gallery from "./components/Gallery";
 import { componentsData } from "./data/componentsData";
 import "./App.css";
 
 function App() {
+  const [filter, setFilter] = useState<string>("All");
+  const categories = ["All", "Buttons", "Forms", "Cards", "Data Display"];
+  const filteredComponents =
+    filter === "All"
+      ? componentsData
+      : componentsData.filter((comp) => comp.category === filter);
   return (
     <div className="app">
       <header className="app-header">
